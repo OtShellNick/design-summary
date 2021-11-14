@@ -1,0 +1,10 @@
+@import "src/app/main";
+
+.header__nav {
+  padding: 0 108px;
+
+  &_list {
+    display: flex;
+    justify-content: space-between;
+  }
+}

@@ -1,0 +1,22 @@
+@import "src/app/main";
+
+.header {
+  font-family: Steppe, serif;
+  background-color: $headerBackground;
+  padding: 24px 0;
+
+  &__heading {
+    text-align: center;
+    font-size: 36px;
+    line-height: 43px;
+    color: $mainBlack;
+  }
+
+  &__subheading {
+    margin-bottom: 20px;
+    text-align: center;
+    font-size: 18px;
+    line-height: 22px;
+    color: $white;
+  }
+}

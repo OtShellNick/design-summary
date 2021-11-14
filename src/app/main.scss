@@ -1,0 +1,19 @@
+@import "src/app/fonts/fonts";
+
+$headerBackground: #BCC8BA;
+$mainBlack: #0C2008;
+$white: #FFFFFF;
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+ul {
+  list-style-type: none;
+}
+
+.container {
+  width: 1500px;
+  margin: 0 auto;
+}

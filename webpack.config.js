@@ -94,7 +94,7 @@ module.exports = {
         runtimeChunk: 'single',
     },
     resolve: {
-        extensions: ['.js', '.json', '.png', '.jsx', '.ts', '.tsx', '.scss'],
+        extensions: ['.js', '.json', '.png', '.jsx', '.ts', '.tsx', '.scss', '.woff'],
         alias: {
             '@components': path.resolve(__dirname, './src/app/components'),
             '@': path.resolve(__dirname, './src'),
@@ -112,6 +112,10 @@ module.exports = {
                 use: cssLoaders()
             },
             {
+                test: /\.(woff|woff2|eot|ttf|otf)$/i,
+                type: 'asset/resource',
+            },
+            {
                 test: /\.s[ac]ss$/,
                 use: cssLoaders('sass-loader')
             },
@@ -127,10 +131,6 @@ module.exports = {
                     }
                 ],
                 issuer: /\.[jt]sx?$/,
-            },
-            {
-                test: /\.svg$/,
-
             },
             {
                 test: /\.(jpe?g|png|gif)$/,
